@@ -74,8 +74,12 @@
             </div>
         </div>
     </div>
+
     <div class="row">
-        <div class="col-2">
+        <div class="col-2"></div>
+        <div class="col-2"></div>
+        <div class="col-1"></div>
+        <div class="col-2 text-center">
             <input id="input" placeholder="Enter Palindrome" class="txtWide" />
         </div>
         <div class="col-6">
@@ -83,6 +87,7 @@
         </div>
 
     </div>
+ 
     <div class="container">
         <div class="center">
             <button id="btn" class="btn btn-primary txtWide">Run Palindrome</button>
@@ -96,14 +101,17 @@
     <script>
 
         $("#btn").on("click", function () {
-            let forward = $("input").val();
-            let reverse = forward.split("").reverse().join("")
+            let forward = $("input").val().toLowerCase().replace(/\s/g, '');
+            
+            let reverse = forward.split("").reverse().join("");
             if (forward == reverse) {
                 $("#result").text(`The word "${forward}" is a Palindrome!`);
             }
             else {
                 $("#result").text(`The word "${forward}" is not a Palindrome!`);
+                
             }
+            
         })
 
         
