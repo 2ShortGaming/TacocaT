@@ -64,12 +64,40 @@
             </div>
         </div>
     </div>
+    <div class="row">
+        <div class="col-6">
+            <input id="input" placeholder="Enter Palindrome" class="txtWide" />
+        </div>
+        <div class="col-6">
+            <p id="txtOutput1"></p>
+        </div>
 
+    </div>
+    <div class="row">
+        <div class="col">
+            <button id="btn" class="btn btn-primary txtWide">Run Palindrome</button>
+            <p id="result"></p>
+        </div>
+    </div>
     <!-- Bootstrap core JavaScript -->
     <script src="//code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="//cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="//stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script>
 
+        $("#btn").on("click", function () {
+            let forward = $("input").val();
+            let reverse = forward.split("").reverse().join("")
+            if (forward == reverse) {
+                $("#result").text(`The word "${forward}" is a Palindrome!`);
+            }
+            else {
+                $("#result").text(`The word "${forward}" is not a Palindrome!`);
+            }
+        })
+
+        
+    </script>
 </body>
 
 </html>
