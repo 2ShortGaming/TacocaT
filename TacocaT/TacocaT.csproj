@@ -68,6 +68,13 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Code.html" />
+    <Content Include="css\prism.css" />
+    <Content Include="Images\favicon\android-chrome-192x192.png" />
+    <Content Include="Images\favicon\android-chrome-512x512.png" />
+    <Content Include="Images\favicon\apple-touch-icon.png" />
+    <Content Include="Images\favicon\favicon-16x16.png" />
+    <Content Include="Images\favicon\favicon-32x32.png" />
+    <Content Include="Images\favicon\favicon.ico" />
     <Content Include="Images\tacocatbg.jpg" />
     <Content Include="Images\tacocatbg2.jpg" />
     <Content Include="Images\TacocaT\android-chrome-192x192.png" />
@@ -77,6 +84,7 @@
     <Content Include="Images\TacocaT\favicon-32x32.png" />
     <Content Include="Images\TacocaT\favicon.ico" />
     <Content Include="Index.html" />
+    <Content Include="js\prism.js" />
     <Content Include="Solve.html" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -85,6 +93,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Images\TacocaT\site.webmanifest" />
+    <Content Include="Images\favicon\site.webmanifest" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -93,10 +102,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="css\" />
-    <Folder Include="js\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
