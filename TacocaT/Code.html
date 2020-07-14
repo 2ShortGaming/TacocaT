@@ -22,10 +22,25 @@
             -ms-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
         }
+        body, html {
+            height: 100%;
+            margin: 0;
+        }
+
+        .bg {
+            /* The image used */
+            background-image: url("Images/hexgrey.jpg");
+            /* Full height */
+            height: 100%;
+            /* Center and scale the image nicely */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
     </style>
 </head>
 
-<body style="background-image: url('Images/tacocatbg.jpg')">
+<body class="bg">
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
