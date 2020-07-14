@@ -87,7 +87,7 @@
                 <ul class="list-unstyled h4">
                     <li style="font-size:20px">The Exercise</li>
                 </ul>
-                <br/>
+                <br />
                 <ul class="h4">
                     <li>Type in a word or phrase and click the "Run Palindrome" button to determine if it is a palindrome or not.</li>
                 </ul>
@@ -127,26 +127,27 @@
     <script src="//code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="//cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="//stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="scripts/prism.js"></script>
+    <script src="scripts/main.js"></script>
 
-    
     <script>
 
-        $("#btn").on("click", function () {
-            let forward = $("input").val().toLowerCase().replace(/\s/g, '').replace(/\./g, '').replace(/\,/g, '').replace(/\?/g, '');
-           
-            let reverse = forward.split("").reverse().join("");
-            if (forward == reverse) {
-                $("#result").text(`The word "${forward}" is a Palindrome!`);
-            }
-            else {
-                $("#result").text(`The word "${forward}" is NOT a Palindrome!`);
-            }
-        });
+            //$("#btn").on("click", function () {
+            //    let forward = $("input").val().toLowerCase().replace(/\s/g, '').replace(/\./g, '').replace(/\,/g, '').replace(/\?/g, '');
 
-        $("#btnClear").on("click", function () {
-            $("#input").val("");
-            $("#result").text("");
-        })
+            //    let reverse = forward.split("").reverse().join("");
+            //    if (forward == reverse) {
+            //        $("#result").text(`The word "${forward}" is a Palindrome!`);
+            //    }
+            //    else {
+            //        $("#result").text(`The word "${forward}" is NOT a Palindrome!`);
+            //    }
+            //});
+
+            //$("#btnClear").on("click", function () {
+            //    $("#input").val("");
+            //    $("#result").text("");
+            //})
     </script>
 </body>
 

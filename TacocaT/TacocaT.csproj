@@ -86,7 +86,8 @@
     <Content Include="Images\TacocaT\favicon-32x32.png" />
     <Content Include="Images\TacocaT\favicon.ico" />
     <Content Include="Index.html" />
-    <Content Include="js\prism.js" />
+    <Content Include="scripts\main.js" />
+    <Content Include="scripts\prism.js" />
     <Content Include="Solve.html" />
     <Content Include="Web.config" />
   </ItemGroup>
