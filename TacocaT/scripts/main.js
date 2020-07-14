@@ -1,5 +1,5 @@
 ﻿$("#btn").on("click", function () {
-    let forward = $("input").val().toLowerCase().replace(/\s/g, '').replace(/\./g, '').replace(/\,/g, '').replace(/\?/g, '');
+    let forward = $("input").val().replace(/[^a-zA-Z\" "]/g, '').trim().toLowerCase();
 
     let reverse = forward.split("").reverse().join("");
     if (forward == reverse) {
