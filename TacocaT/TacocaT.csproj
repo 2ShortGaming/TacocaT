@@ -75,6 +75,7 @@
     <Content Include="Images\favicon\favicon-16x16.png" />
     <Content Include="Images\favicon\favicon-32x32.png" />
     <Content Include="Images\favicon\favicon.ico" />
+    <Content Include="Images\hexorg.jpg" />
     <Content Include="Images\tacocatbg.jpg" />
     <Content Include="Images\tacocatbg2.jpg" />
     <Content Include="Images\TacocaT\android-chrome-192x192.png" />
