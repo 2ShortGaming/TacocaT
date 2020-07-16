@@ -28,6 +28,12 @@
            background-repeat: no-repeat;
            background-size: cover;
        }
+       .btnStyle {
+           border: double;
+           color: snow;
+           margin-top: 20px;
+           width:100%;
+       }
    </style>
 
 
@@ -98,19 +104,19 @@
     <div class="row">
         <div class="col-3"></div>
         <div class="col-6 text-center">
-            <input style="margin-top:10px" id="input" placeholder="Enter Palindrome" class="col-lg-12" />
+            <input style="margin-top:10px" id="input" placeholder="Enter Palindrome" class="col-lg-12 form-control" />
         </div>
         <div class="col-8"></div>
     </div>
 
     <div class="container">
         <div class="row">
-            <div class="col-4"></div>
-            <div class="col-2">
-                <button id="btn" style="margin-left:10px; margin-top:20px; color:snow; border:double" class="btn bg-dark txtWide">Run Palindrome</button>
+           <div class="col-3"></div>
+            <div class="col-3" style="padding-left:4em">
+                <button id="btn" style="margin-left:10px" class="btn bg-dark btnStyle">Run Palindrome</button>
             </div>
-            <div class="col-3">
-                <button id="btnClear" style="margin-left:10px; margin-top:20px; color:snow; border:double" class="btn bg-dark txtWide">Clear</button>
+            <div class="col-2">
+                <button id="btnClear" class="btn bg-dark btnStyle">Clear</button>
             </div>
         </div>
         <br />
