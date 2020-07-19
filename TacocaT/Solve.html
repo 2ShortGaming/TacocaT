@@ -102,6 +102,11 @@
             width: 70%;
             margin: auto;
         }
+
+        .bgd {
+            background-color: #171717;
+            color: snow;
+        }
     </style>
 
 
@@ -183,19 +188,23 @@
             <!-- Right Side Navigation Button-->
             <div class="dropdown">
                 <div class="navbar-collapse-right">
-                    <ul class="nav navbar-nav ml-auto navbar-right btn-scroll">
-                        <li><a class="nav navbar-nav ml-auto navbar-right btn-nav dropdown-toggle" data-toggle="dropdown">MINI PROJECTS <i class="icon icon-arrow-right"></i></a></li>
+                    <ul class="nav navbar-nav ml-auto navbar-right btn-scroll" data-toggle="dropdown">
+                        <li><a class="nav navbar-nav ml-auto navbar-right btn-nav">MINI PROJECTS <i class="icon icon-arrow-right"></i></a></li>
 
                     </ul>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
+                    <div class="dropdown-menu bgd" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" style="color:snow" href="https://swaney-fizzbuzz.netlify.app/" target="_blank">FizzBuzz</a>
+                        <a class="dropdown-item" style="color:snow" href="https://swaney-sumofallfears.netlify.app/" target="_blank">Sum of all Fears</a>
+                        <a class="dropdown-item" style="color:snow" href="https://swaney-sunsethills.netlify.app" target="_blank">Sunset Hills</a>
                     </div>
                 </div>
             </div>
         </div>
     </nav>
+    <br />
+    <br />
+    <br />
+    <br />
 
             <!-- Page Content -->
             <div class="container" style="color:snow">
@@ -222,15 +231,14 @@
                 <div class="col-8"></div>
             </div>
 
-            <div class="container">
+            
                 <div class="row">
-                    <div class="col-3"></div>
-                    <div class="col-3" style="padding-left:4em">
+                    <div class="col-4"></div>
+                    <div class="col">
                         <button id="btn" style="margin-left:10px" class="btn bg-dark btnStyle">Run Palindrome</button>
-                    </div>
-                    <div class="col-2">
                         <button id="btnClear" class="btn bg-dark btnStyle">Clear</button>
                     </div>
+                  
                 </div>
                 <br />
                 <br />
@@ -238,7 +246,7 @@
                     <div class="col-3"></div>
                     <p class="col-6 h3" id="result" style="margin-top:25px; margin-right:50px; color:snow"></p>
                 </div>
-            </div>
+           
 
 
 
